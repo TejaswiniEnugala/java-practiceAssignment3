@@ -16,7 +16,7 @@ public class RemoveVowelsTest {
     }
 
     @Test
-    public void sortAndSumOfEvenNumbers()
+    public void fromGivenStringsRemoveTheVowels()
     {
         String input[] = {"India","United States","Germany","Egypt","czechoslovakia"};
         String output[] = {"Ind","Untd Stts", "Grmny","Egypt", "czchslvk"};
@@ -24,6 +24,16 @@ public class RemoveVowelsTest {
         expectedresult = output;
         assertArrayEquals(expectedresult,actualresult);
     }
+    @Test
+    public void removeTheVowelsFromGivenStrings()
+    {
+        String input[] = {"India","United States","Germany","Egypt","czechoslovakia"};
+        String output[] = {"Ind","Untd ", "Grmny","Eg", "czcvk"};
+        actualresult = sort.removeVowels(input);
+        expectedresult = output;
+        assertNotEquals(expectedresult,actualresult);
+    }
+
     @After
     public void tearDown(){
         sort = null;

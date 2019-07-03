@@ -4,7 +4,6 @@ public class ChessBoard {
     public static String[][] chessBoard() //to print a chessboard
     {
         String array[][]=new String[8][8];
-        String str="";
         for(int i=0;i<8;i++)
         {
             for (int j=0;j<8;j++)

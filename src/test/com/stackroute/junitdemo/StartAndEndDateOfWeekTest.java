@@ -16,11 +16,18 @@ public class StartAndEndDateOfWeekTest {
     }
 
     @Test
-    public void sortAndSumOfEvenNumbers()
+    public void checkTheStartAndEndOfWeek()
     {
         actualresult = startAndEndDateOfWeek.firstAndLastDateOfWeek();
         expectedresult = "Sun 07/07/2019";
         assertEquals(expectedresult,actualresult);
+    }
+    @Test
+    public void findStartAndEndDateOfWeek()
+    {
+        actualresult = startAndEndDateOfWeek.firstAndLastDateOfWeek();
+        expectedresult = "Sun 10/07/2019";
+        assertNotEquals(expectedresult,actualresult);
     }
     @After
     public void tearDown(){
